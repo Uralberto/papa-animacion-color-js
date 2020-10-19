@@ -1,0 +1,733 @@
+
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 48, 48, .2);
+
+}
+
+ .dadContainer {
+    
+    background-color: rgb(49, 48, 48);
+    margin: 10%  auto;
+    width: 80%;
+    height: auto;
+}
+
+
+
+
+.dadContainer path  {
+    animation: animarFill 2s 4s forwards;
+
+}
+
+
+
+@keyframes animarFill {
+    
+    0%{
+
+    }
+    
+    
+    to {
+        fill: none;
+        stroke-dasharray: 2px;
+    }
+    
+} 
+
+
+.dadContainer .g1 {
+    stroke-width: .1px;
+    animation:  animarStroke1 5s ease-out 2s forwards,  escalar1 3s ease-out 2s forwards; 
+}
+
+
+@keyframes animarStroke1 {
+    from {
+        stroke-width: 10px;
+
+    }
+    to {
+        stroke-width: .1px;
+    }
+}
+
+
+@keyframes escalar1 {
+    from {
+        transform: scale(3)
+    }
+    to {
+        transform: scale(1)
+        
+    }
+}
+
+
+.dadContainer .g2 {
+    stroke-width: .1px;
+    animation:  animarStroke2 4.0s ease-out 2s forwards,  escalar2 4s ease-out 2s forwards; 
+}
+
+
+
+@keyframes animarStroke2 {
+    from {
+        stroke-width: 200px;
+    }
+    to {
+        stroke-width: .1px;
+    }
+}
+
+
+@keyframes escalar2 {
+    from {
+        transform: scale(3)
+    }
+    to {
+        transform: scale(1)
+        
+    }
+}
+
+
+
+.dadContainer .g3 {
+    stroke-width: .1px;
+    animation:  animarStroke3 4s ease-out  2s forwards,  escalar3 3s ease-out 2s forwards; 
+}
+
+
+
+@keyframes animarStroke3 {
+    from {
+        stroke-width: 300px;
+
+    }
+    to {
+        stroke-width: .1px;
+    }
+}
+
+
+@keyframes escalar3 {
+    from {
+        transform: scale(3)
+    }
+    to {
+        transform: scale(1)
+        
+    }
+}
+
+
+
+.cl1, .cls-125 {
+    fill: #a5a4a4;
+}
+
+.cl1, .cl119, .cls-125 {
+    stroke: #a5a4a4;
+}
+
+.cl2, .cl79 {
+    fill: #686868;
+    stroke: #686868;
+}
+
+.cl3 {
+    fill: #777575;
+    stroke: #777575;
+}
+
+.cl114, .cl137, .cl138, .cl18, .cl23, .cl4, .cl6, .cl92, .cl93 {
+    fill: none;
+}
+
+.cls-145, .cl5, .cl75, .cl97 {
+    fill: #4a4a4a;
+    stroke: #4a4a4a;
+}
+
+.cl6 {
+    stroke: #504d4d;
+}
+
+.cl12, .cl7 {
+    fill: #8e8b8b;
+}
+
+.cl7 {
+    stroke: #515050;
+}
+
+.cl10, .cls-104, .cl8 {
+    fill: #484848;
+}
+
+.cls-104, .cls8 {
+    stroke: #484848;
+}
+
+.cl9 {
+    fill: #8a7e7e;
+}
+
+.cl113, .cl114, .cl118, .cl33, .cl34, .cl35, .cl42, .cl56, .cl62, .cl9, .cl92, .cl93 {
+    stroke: #707070;
+}
+
+.cl10, .cl11, .cl22 {
+    stroke: #635e5e;
+}
+
+.cl11 {
+    fill: #645e5e;
+}
+
+.cl12 {
+    stroke: #4f4d4d;
+}
+
+.cl13 {
+    fill: #615d5d;
+}
+
+.cl13, .cl14 {
+    stroke: #615d5d;
+}
+
+.cl14, .cl43, .cl74 {
+    fill: #585757;
+}
+
+.cl15, .cl17 {
+    fill: #4b4747;
+    stroke: #4b4747;
+}
+
+.cls-143, .cl16, .cl44 {
+    fill: #8f8787;
+    stroke: #8f8787;
+}
+
+.cl18 {
+    stroke: #474444;
+}
+
+.cl19 {
+    fill: #444040;
+    stroke: #444040;
+}
+
+.cl20 {
+    fill: #403e3e;
+}
+
+.cl20, .cl23 {
+    stroke: #403e3e;
+}
+
+.cl21 {
+    fill: #5e5b5b;
+    stroke: #5e5b5b;
+}
+
+.cl22 {
+    fill: #635e5e;
+}
+
+.cl24 {
+    fill: #535353;
+}
+
+.cl24, .cl25 {
+    stroke: #3e3d3d;
+}
+
+.cl25 {
+    fill: #3e3d3d;
+}
+
+.cl26 {
+    fill: #585656;
+    stroke: #585656;
+}
+
+.cl27 {
+    fill: #686565;
+    stroke: #686565;
+}
+
+.cl28 {
+    fill: #5b5a5a;
+    stroke: #5b5a5a;
+}
+
+.cl29 {
+    fill: #403f3f;
+    stroke: #403f3f;
+}
+
+.cls-106, .cl30 {
+    fill: #444343;
+    stroke: #444343;
+}
+
+.cl31 {
+    fill: #504c4c;
+    stroke: #504c4c;
+}
+
+.cl32 {
+    fill: #504f4f;
+    stroke: #504f4f;
+}
+
+.cl33 {
+    fill: #707070;
+}
+
+.cl34 {
+    fill: #727070;
+}
+
+.cl35 {
+    fill: #858282;
+}
+
+.cl36 {
+    fill: #7e7979;
+    stroke: #7e7979;
+}
+
+.cl37 {
+    fill: #656262;
+    stroke: #656262;
+}
+
+.cl38 {
+    fill: #5e5c5c;
+    stroke: #5e5c5c;
+}
+
+.cl39 {
+    fill: #8e8686;
+    stroke: #8e8686;
+}
+
+.cl40 {
+    fill: #4a4949;
+    stroke: #4a4949;
+}
+
+.cl41 {
+    fill: #474747;
+    stroke: #474747;
+}
+
+.cl42 {
+    fill: #706f6f;
+}
+
+.cl43, .cl74 {
+    stroke: #585757;
+}
+
+.cls-109, .cl45 {
+    fill: #7d7b7b;
+    stroke: #7d7b7b;
+}
+
+.cl46 {
+    fill: #555252;
+    stroke: #555252;
+}
+
+.cls-103, .cl47 {
+    fill: #535252;
+    stroke: #535252;
+}
+
+.cl48 {
+    fill: #484747;
+    stroke: #484747;
+}
+
+.cl49 {
+    fill: #7d7d7d;
+    stroke: #7d7d7d;
+}
+
+.cl50 {
+    fill: #6b6a6a;
+    stroke: #6b6a6a;
+}
+
+.cl51 {
+    fill: #5a5959;
+    stroke: #5a5959;
+}
+
+.cl52 {
+    fill: #676666;
+    stroke: #676666;
+}
+
+.cl53 {
+    fill: #7e7c7c;
+    stroke: #7e7c7c;
+}
+
+.cl54 {
+    fill: #585858;
+    stroke: #585858;
+}
+
+.cl55 {
+    fill: #8d8b8b;
+    stroke: #838383;
+}
+
+.cl56 {
+    fill: #716f6f;
+}
+
+.cl57 {
+    fill: #858383;
+    stroke: #858383;
+}
+
+.cl58 {
+    fill: #5e5d5d;
+    stroke: #5e5d5d;
+}
+
+.cl59 {
+    fill: #b9b1b1;
+    stroke: #b9b1b1;
+}
+
+.cl60 {
+    fill: #555353;
+    stroke: #555353;
+}
+
+.cl61 {
+    fill: #656464;
+    stroke: #656464;
+}
+
+.cl62, .cl91 {
+    fill: #717070;
+}
+
+.cl63 {
+    fill: #919090;
+    stroke: #919090;
+}
+
+.cl64 {
+    fill: #989898;
+    stroke: #989898;
+}
+
+.cl112, .cl65 {
+    fill: #5b5b5b;
+    stroke: #5b5b5b;
+}
+
+.cl66 {
+    fill: #616161;
+    stroke: #616161;
+}
+
+.cl67, .cl71 {
+    fill: #6d6c6c;
+    stroke: #6d6c6c;
+}
+
+.cl68 {
+    fill: #7e7d7d;
+    stroke: #7e7d7d;
+}
+
+.cls-107, .cl69 {
+    fill: #5d5c5c;
+    stroke: #5d5c5c;
+}
+
+.cl70 {
+    fill: #818080;
+    stroke: #818080;
+}
+
+.cl72 {
+    fill: #787878;
+    stroke: #787878;
+}
+
+.cl73 {
+    fill: #4b4b4b;
+    stroke: #4b4b4b;
+}
+
+.cl76 {
+    fill: #787676;
+    stroke: #787676;
+}
+
+.cl77 {
+    fill: #6e6e6e;
+    stroke: #6e6e6e;
+}
+
+.cl78, .cls-81 {
+    fill: #878585;
+    stroke: #878585;
+}
+
+.cls-80 {
+    fill: #959494;
+    stroke: #959494;
+}
+
+.cls-82 {
+    fill: #474646;
+    stroke: #474646;
+}
+
+.cls-83 {
+    fill: #3b3b3b;
+    stroke: #3b3b3b;
+}
+
+.cls-84 {
+    fill: #464646;
+    stroke: #464646;
+}
+
+.cls-85 {
+    fill: #807f7f;
+    stroke: #807f7f;
+}
+
+ 
+
+.cls-86 {
+    fill: #414141;
+    stroke: #414141;
+
+}
+
+
+.cls-87 {
+    fill: #3d3c3c;
+    stroke: #3d3c3c;
+}
+
+.cls-88 {
+    fill: #343434;
+    stroke: #343434;
+}
+
+.cls-89 {
+    fill: #3a3a3a;
+    stroke: #3a3a3a;
+}
+
+.cl90 {
+    fill: #505050;
+    stroke: #505050;
+}
+
+.cl91 {
+    stroke: #717070;
+}
+
+.cl94 {
+    fill: #636262;
+    stroke: #636262;
+}
+
+.cl95 {
+    fill: #575656;
+    stroke: #575656;
+}
+
+.cl96 {
+    fill: #5d5b5b;
+    stroke: #5d5b5b;
+}
+
+.cls-101, .cl98 {
+    fill: #636363;
+}
+
+.cl98 {
+    stroke: #656363;
+}
+
+.cl99 {
+    fill: #6e6a6a;
+    stroke: #6e6a6a;
+}
+
+.cls-100 {
+    fill: #5e5e5e;
+    stroke: #5e5e5e;
+}
+
+.cls-101 {
+    stroke: #636363;
+}
+
+.cls-102 {
+    fill: #7b7878;
+    stroke: #7b7878;
+}
+
+.cls-105 {
+    fill: #9f9e9e;
+    stroke: #9f9e9e;
+}
+
+.cls-108 {
+    fill: #4d4c4c;
+    stroke: #4d4c4c;
+}
+
+.cl110 {
+    fill: #434242;
+    stroke: #434242;
+}
+
+.cl111 {
+    fill: #6a6767;
+    stroke: #6a6767;
+}
+
+.cl113 {
+    fill: #888484;
+}
+
+.cl115, .cl133, .cl136 {
+    fill: #aeacac;
+}
+
+.cl115 {
+    stroke: #9f9a9a;
+}
+
+.cl116 {
+    fill: #a2a1a1;
+    stroke: #9f9d9d;
+}
+
+.cl117, .cl118 {
+    fill: #33313e;
+}
+
+.cl117 {
+    stroke: #33313e;
+}
+
+.cl119, .cls-127, .cl135 {
+    fill: #a2a0a0;
+}
+
+.cls-120, .cls-121 {
+    fill: #828282;
+    stroke: #828282;
+}
+
+.cls-122 {
+    fill: #9d9a9a;
+    stroke: #9d9a9a;
+}
+
+.cls-123 {
+    fill: #676565;
+    stroke: #676565;
+}
+
+.cls-124 {
+    fill: #b7b6b6;
+    stroke: #b7b6b6;
+}
+
+.cls-126, .cls-128 {
+    fill: #afaeae;
+}
+
+.cls-126, .cls-128, .cl131 {
+    stroke: #afaeae;
+}
+
+.cls-127, .cl135 {
+    stroke: #a2a0a0;
+}
+
+.cls-129 {
+    fill: #aeabab;
+    stroke: #929292;
+}
+
+.cl130 {
+    fill: #28272e;
+}
+
+.cl130, .cl137 {
+    stroke: #28272e;
+}
+
+.cl131, .cls-142 {
+    fill: #aba9a9;
+}
+
+.cl132, .cl134 {
+    fill: #9a9999;
+}
+
+.cl132, .cl134, .cls-140 {
+    stroke: #9a9999;
+}
+
+.cl133, .cl136 {
+    stroke: #aeacac;
+}
+
+.cl138 {
+    stroke: #737171;
+}
+
+.cl139 {
+    fill: #888787;
+    stroke: #888787;
+}
+
+.cls-140 {
+    fill: #949292;
+}
+
+.cls-141 {
+    fill: #b4b2b2;
+    stroke: #b4b2b2;
+}
+
+.cls-142 {
+    stroke: #aba9a9;
+}
+
+.cls-144 {
+    fill: #575555;
+    stroke: #575555;
+}
+
