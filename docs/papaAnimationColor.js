@@ -21,22 +21,8 @@ function pintar() {
   }
 }
 
-// let contador = 0
-
-// function pintarInterval () {
-// contador++
-// pintar()
-// if(contador===100){
-//   clearInterval(clear)
-// }
-// }
-
-// let clear = setInterval(pintarInterval, 50)
-
-let contador = 0;
-
 setTimeout(function () {
-  contador++;
+  let contador = 0;
   let clear = setInterval(function () {
     pintar();
     contador++;
