@@ -1,136 +1,66 @@
 
+:root {
+    --main-color-blue: #2337F1;
+    --color-blue1: #4262F3;
+    --color-blue2: #5E83F5;
+    --color-blue3: #7AA1F7;
+    --color-blue4: #98BDF9;
+    --color-blue5: #B6D4FB;
+    --color-blue6: #D7EAFC;
+    --main-color-darkblue: #272839;
+    --color-darkblue1: #262B59;
+    --color-darkblue1A: #272B59;
+    --color-darkblue2: #252E7D;
+    --color-darkblue3: #24309A;
+    --color-darkblue4: #2433b8;
+    --color-darkblue5: #2335D6;
+    --color-gray1: #F6F3F3;
+    --color-gray2: #e7e4e7;
+    --color-gray3: #B4B3B7;
+    --color-gray4: #919097;
+    --color-gray5: #6E6E78;
+    --color-gray6: #494956;
+   --color-orange: #f8cd51
+}
+
 
 .container {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(49, 48, 48, .2);
 
 }
 
- .dadContainer {
-    
-    background-color: rgb(49, 48, 48);
+.dadContainer {
+    transform-origin: 100% 100%;
+    background-color: var(--color-darkblue1A);
     margin: 10%  auto;
     width: 80%;
     height: auto;
 }
 
 
-
-
-.dadContainer path  {
-    animation: animarFill 2s 4s forwards;
+#dadContainer__boton {
+margin-bottom: 10%;
+font-size: 4rem;
+background-color: transparent;
+border: none;
 
 }
 
+.dadContainer .dadPaths {
+    stroke-width: .5px;
+    stroke: var(--color-gray6);
+    transform-origin: 50% 50%
 
-
-@keyframes animarFill {
-    
-    0%{
-
-    }
-    
-    
-    to {
-        fill: none;
-        stroke-dasharray: 2px;
-    }
-    
-} 
-
-
-.dadContainer .g1 {
-    stroke-width: .1px;
-    animation:  animarStroke1 5s ease-out 2s forwards,  escalar1 3s ease-out 2s forwards; 
 }
-
-
-@keyframes animarStroke1 {
-    from {
-        stroke-width: 10px;
-
-    }
-    to {
-        stroke-width: .1px;
-    }
-}
-
-
-@keyframes escalar1 {
-    from {
-        transform: scale(3)
-    }
-    to {
-        transform: scale(1)
-        
-    }
-}
-
-
-.dadContainer .g2 {
-    stroke-width: .1px;
-    animation:  animarStroke2 4.0s ease-out 2s forwards,  escalar2 4s ease-out 2s forwards; 
-}
-
-
-
-@keyframes animarStroke2 {
-    from {
-        stroke-width: 200px;
-    }
-    to {
-        stroke-width: .1px;
-    }
-}
-
-
-@keyframes escalar2 {
-    from {
-        transform: scale(3)
-    }
-    to {
-        transform: scale(1)
-        
-    }
-}
-
-
-
-.dadContainer .g3 {
-    stroke-width: .1px;
-    animation:  animarStroke3 4s ease-out  2s forwards,  escalar3 3s ease-out 2s forwards; 
-}
-
-
-
-@keyframes animarStroke3 {
-    from {
-        stroke-width: 300px;
-
-    }
-    to {
-        stroke-width: .1px;
-    }
-}
-
-
-@keyframes escalar3 {
-    from {
-        transform: scale(3)
-    }
-    to {
-        transform: scale(1)
-        
-    }
-}
-
 
 
 .cl1, .cls-125 {
     fill: #a5a4a4;
+
 }
 
 .cl1, .cl119, .cls-125 {
