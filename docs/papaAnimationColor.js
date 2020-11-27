@@ -87,49 +87,83 @@ function dadTransformInicial() {
 
 
 
+// function dadAnimarTransformfill() {
+
+//   for (let i = 0; i <= 172; i++) {
+//     let dadPath = dadPaths[i];
+//     let numRandom = Math.floor(Math.random() * 4) + 1;
+
+//     switch (numRandom) {
+//       case 1:
+//         dadPath.setAttribute("transform", "translate(-784 -179)");
+//         dadPath.style.fill=colorRandom()
+
+//         break;
+
+//       case 2:
+//         dadPath.setAttribute("transform", "translate(-804 -199)");
+//         dadPath.style.fill=colorRandom()
+
+//         break;
+
+//       case 3:
+//         dadPath.setAttribute("transform", "translate(-814 -209)");
+//         dadPath.style.fill=colorRandom()
+
+//       case 4:
+//         dadPath.setAttribute("transform", "translate(-774 -169)");
+//         dadPath.style.fill=colorRandom()
+//         break;
+
+//       default:
+//         break;
+//     }
+//   }
+// }
+
+
+let factor = 100
+let x1 = -784
+let y1 = -179
+let delta = 50
+let translateInicial = 'translate(-784px, -179px)'
+
 function dadAnimarTransformfill() {
 
   for (let i = 0; i <= 172; i++) {
     let dadPath = dadPaths[i];
-    let numRandom = Math.floor(Math.random() * 4) + 1;
-
-    switch (numRandom) {
-      case 1:
-        dadPath.setAttribute("transform", "translate(-784 -179)");
-        dadPath.style.fill=colorRandom()
-
-        break;
-
-      case 2:
-        dadPath.setAttribute("transform", "translate(-804 -199)");
-        dadPath.style.fill=colorRandom()
-
-        break;
-
-      case 3:
-        dadPath.setAttribute("transform", "translate(-814 -209)");
-        dadPath.style.fill=colorRandom()
-
-      case 4:
-        dadPath.setAttribute("transform", "translate(-774 -169)");
-        dadPath.style.fill=colorRandom()
-        break;
-
-      default:
-        break;
-    }
+    let px = Math.random()*factor;
+    let py = Math.random()*factor;
+    let translateXY = `translate(${x1-px}px , ${y1-py}px)`
+    dadPath.style.fill=colorRandom()
+    dadPath.animate([
+      {transform: translateInicial},
+      {transform: translateXY}
+    ], {
+      duration: 2000,
+      easing: 'ease-out',
+      fill: 'backwards'
+    }   
+    )
+    factor = -factor+1
+    translateInicial = `translate(${x1+delta}px , ${y1+delta}px)`
+    delta = -delta*Math.random()
   }
+
 }
 
 let dadAnimTransfFill;
 
 function activarDadAnimarTransformFill() {
- dadAnimTransfFill = setInterval(dadAnimarTransformfill, 500);
+  dadAnimarTransformfill() 
+  dadAnimTransfFill = setInterval(dadAnimarTransformfill, 2200);
 }
 
 function pararDadAnimarTransformFill() {
   clearInterval(dadAnimTransfFill);
 }
+
+
 
 // Termina código para pintar aleatoriamente los cuerpos de los  paths y moverlos
 
